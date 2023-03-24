@@ -1,0 +1,11 @@
+.castCard {
+    margin: 1rem;
+    border: 0.25rem solid rgb(20, 20, 20);
+}
+
+#fiveDayForecast {
+    display:grid;
+    /* grid-template-columns:repeat(5,1fr); */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
