@@ -22,32 +22,21 @@
 <body id="contentMain">
     <!-- Searchbar and history -->
     <aside id="citySearch">
-        <p id="searchbarText">Search for a city</p>
-        <div id="citySearchBox">
-            <button id="searchBtn">Search</button>
-            <input id="cityInput" type="text" placeholder="City">
-        </div>
+        <form onsubmit="getWeather(event)">
+            <p id="searchbarText">Search for a city</p>
+            <div id="citySearchBox">
+                <button id="searchBtn">Search</button>
+                <input id="cityInput" type="text" placeholder="City">
+            </div>
+        </form>
     </aside>
+
 
     <!-- Box for current wheather -->
     <div id="weather" class="container">
 
         <div id="currentForcast">
-            <div class="currentLocationInfo">
-                <p id="currentChosenLocation"></p>
-            </div>
-            <div class="currentLocationInfo">
-                <p id="currentChosenLocationTemp"></p>
-            </div>
-            <div class="currentLocationInfo">
-                <p id="currentLocationWind"></p>
-            </div>
-            <div class="currentLocationInfo">
-                <p id="currentLocationHumidity"></p>
-            </div>
-            <div class="currentLocationInfo">
-                <p id="currentLocationUVindex"></p>
-            </div>
+
         </div>
 
         <!-- This is the area where the 5 day forecast will be apended -->
