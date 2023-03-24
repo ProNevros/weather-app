@@ -12,20 +12,25 @@
 
 </head>
 </head>
+
 <header>
-    <h1 id="headerText" style="text-align:center; background-color: darkblue; color: rgb(255, 249, 162); padding: 50px;">Weather Forecaster</h1>
+    <h1 id="headerText"
+        style="text-align:center; background-color: rgb(77, 77, 227); color: rgb(255, 251, 196); padding: 50px;">Weather
+        Forecaster</h1>
 </header>
+
 <body id="contentMain">
-<!-- Searchbar and history -->
+    <!-- Searchbar and history -->
     <aside id="citySearch">
         <p id="searchbarText">Search for a city</p>
         <div id="citySearchBox">
             <button id="searchBtn">Search</button>
-            <input id="searchInput" type="text" placeholder="City">
-        </aside>
-    </div>
-<!-- Box for current wheather -->
-    <div id="mainInfo" class="container">
+            <input id="cityInput" type="text" placeholder="City">
+        </div>
+    </aside>
+
+    <!-- Box for current wheather -->
+    <div id="weather" class="container">
 
         <div id="currentForcast">
             <div class="currentLocationInfo">
@@ -44,7 +49,7 @@
                 <p id="currentLocationUVindex"></p>
             </div>
         </div>
-        
+
         <!-- This is the area where the 5 day forecast will be apended -->
         <ul id="fiveDayForecast" class="list-group">
         </ul>
