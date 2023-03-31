@@ -34,6 +34,14 @@ function getWeather(event) {
 function buildDayDiv(day) {
   const dayDiv = document.createElement("div");
   dayDiv.classList.add ('castCard')
+  
+  const location = document.createElement("h1");
+  location.textContent = `${day.city}`;
+  dayDiv.appendChild(location);
+
+  const date = document.createElement("p");
+  date.textContent = `${day.dt_txt}`;
+  dayDiv.appendChild(date);
 
   const temp = document.createElement("p");
   temp.textContent = `Temperature: ${day.main.temp} °F`;
